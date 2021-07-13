@@ -15,7 +15,7 @@
   >>>soluton: 可以用gpu或是 spark 以分散式運算的方式
   
 3.利用TruncatedSVD 降維取出主成分，來判斷商品的關聯:
-  >>>note: 這其實跟pca有點相似，雖然 可以參考 leemeng blog 上關於pca 的文章 |
+  >>>note: 這其實跟pca有點相似，可以參考 leemeng blog 上關於pca 的文章 |
   >>>note2: 不同於 item_base CF 所使用的 cosine-similarity
   
 4.呈現結果:
