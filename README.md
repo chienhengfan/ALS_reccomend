@@ -7,16 +7,16 @@
 程式可以切分成以下幾部分
 
 1.將民國年轉成西元年:
-  >>>PRBLEM: 網路上 iloc[] 在jupyter notebook上可行，但在.py 執行會跳錯
-  >>>SOLUTION: 用另一個dataframe 處理完後再 allocate 回去
+  >>>problem: 網路上 iloc[] 在jupyter notebook上可行，但在.py 執行會跳錯 |
+  >>>solution: 用另一個dataframe 處理完後再 allocate 回去
   
 2.資料清理，生成商品購買次數和顧客關係的 sparse-matrix
-  >>>PRBLEM: 目前測試用少量資料，沒甚麼問題，但一但資料量龐大， cpu 可能無法運算過於龐大的sparse matrix
-  >>>SOLUTION: 可以用gpu或是 spark 以分散式運算的方式
+  >>>problem: 目前測試用少量資料，沒甚麼問題，但一但資料量龐大， cpu 可能無法運算過於龐大的sparse matrix |
+  >>>soluton: 可以用gpu或是 spark 以分散式運算的方式
   
 3.利用TruncatedSVD 降維取出主成分，來判斷商品的關聯:
-  >>>NOTE: 這其實跟pca有點相似，雖然 可以參考 leemeng blog 上關於pca 的文章
-  >>>NOTE2: 不同於 item_base CF 所使用的 cosine-similarity
+  >>>note: 這其實跟pca有點相似，雖然 可以參考 leemeng blog 上關於pca 的文章 |
+  >>>note2: 不同於 item_base CF 所使用的 cosine-similarity
   
 4.呈現結果:
   >>>這部分令我最困擾，目前用csv檔的方式呈現
