@@ -25,7 +25,7 @@ def change_calendar(df,col_date):
 
 
 
-#將天心銷售資料第一階段清理
+#將銷售資料第一階段清理
 #drop na, add ';' after 商品名稱
 def data_cleasing(df,col_item):
     df = df.dropna()
@@ -135,7 +135,7 @@ def reccomend_result(col_item_list, corr_mat,df_cust, num_item):
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('./銷貨明細表_test.csv')
+    df = pd.read_csv('{你的銷貨報表}')
     df = df.dropna()
     col_item ='品名'
     col_date = '銷貨日期'
@@ -156,7 +156,7 @@ if __name__ == '__main__':
     rand_stat = 7
     corr_mat = get_corr_matrix(sparse_matrix,comp_num,rand_stat)
 
-    col_item_list = ['統欣膠原蛋白粉20入袋裝','日香冬筍餅(中)']
+    col_item_list = [{你要的商品名稱}]
 
     #推薦顯示10個
     num_item = 10
