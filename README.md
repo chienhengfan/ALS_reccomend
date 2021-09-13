@@ -1,4 +1,4 @@
-這是我從ERP拉出測試資料，以此資料為基礎而建立ALS推薦系統的程式
+這是建立ALS推薦系統的demo程式
 
 使用套件:pandas, sklearn
 
