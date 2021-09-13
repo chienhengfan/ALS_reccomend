@@ -22,4 +22,9 @@
   >>>這部分令我最困擾，目前用csv檔的方式呈現
   
   
- 未來目標:串接系統 & 用dashboard視覺化
+ 未來目標:把model建在spark上
+
+5.參考資料:
+  >>>https://www.itread01.com/content/1545129906.html
+  >>>https://predictivehacks.com/item-based-collaborative-filtering-in-python/
+  >>>https://towardsdatascience.com/build-recommendation-system-with-pyspark-using-alternating-least-squares-als-matrix-factorisation-ebe1ad2e7679
